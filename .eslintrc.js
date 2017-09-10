@@ -3,6 +3,9 @@ module.exports = {
   parser: 'babel-eslint',
   env: {
     browser: true,
+    commonjs: true,
+    es6: true,
+    jquery: true,
     node: true
   },
   extends: 'standard',
@@ -11,6 +14,17 @@ module.exports = {
     'html'
   ],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'indent': ['error', 4],
+    'semi': ['error', 'always'],
+    'require-jsdoc': 'off',
+    'valid-jsdoc': 'off',
+    'max-len': 'off',
+    'curly': 'off',
+    'arrow-parens': 'off',
+    'comma-dangle': 'off',
+    'linebreak-style': 'off'
+    // 'quotes': ['error', 'double']
+  },
   globals: {}
 }
